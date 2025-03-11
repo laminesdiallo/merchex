@@ -1,0 +1,10 @@
+{% extends 'listings/base.html' %}
+{% load static %}
+    <h1>Groupes de Musique</h1>
+    <ul>
+        {% for band in bands %}
+            <li>{{ band.name }}</li>
+        {% endfor %}
+    </ul>
+{% endbock content %}
+
