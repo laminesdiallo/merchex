@@ -19,8 +19,9 @@ from django.urls import path
 from listings import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/',views.hello),
+    path('band/',views.band_list),
+    path('bands/<int:id>/', views.band_detail),
     path('about/',views.about),
- path('contact/',views.contact),
- path('listings/',views.listings),
+    path('listings/',views.listings),
+    path('contact-us/', views.contact, name='contact'),
 ]
